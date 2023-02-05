@@ -27,18 +27,14 @@ export const Form = styled.form`
     font-weight: 500;
     color: #f5487f;
     cursor: pointer;
+
+    &.termos {
+      text-decoration: underline;
+    }
   }
 `;
 
-export const ForgotPasswordBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
+export const TermosBox = styled.div`
   margin: 2rem 0 3.2rem;
   font-size: 1.4rem;
-
-  a {
-    text-decoration: underline;
-  }
 `;

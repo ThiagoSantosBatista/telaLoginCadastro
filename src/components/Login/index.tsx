@@ -1,9 +1,13 @@
 import React from "react";
 import Button from "../Button";
-import Input from "../input";
+import Input from "../Input";
 import * as S from "./styles";
-4;
-const Login = () => {
+
+interface LoginProps {
+  toggleRegister: (value: boolean) => void;
+}
+
+const Login = ({ toggleRegister }: LoginProps) => {
   return (
     <S.Form>
       <header>
@@ -16,9 +20,14 @@ const Login = () => {
         <Input id="checkbox" label="Lembrar de mim" type="checkbox" />
         <a href="#home">Esqueceu sua senha?</a>
       </S.ForgotPasswordBox>
-      <Button text='Entrar' />
+      <Button text="Entrar" />
       <footer>
-        <p>Não tem uma conta? <span className="medium">Registre-se.</span></p>
+        <p>
+          Não tem uma conta?{" "}
+          <span className="medium" onClick={() => toggleRegister(true)}>
+            Registre-se.
+          </span>
+        </p>
       </footer>
     </S.Form>
   );

@@ -39,6 +39,7 @@ export const InputCheckbox = styled.input`
   margin-right: 0.8rem;
   border: 0.1rem solid black;
   border-radius: 0.4rem;
+  cursor: pointer;
   appearance: none;
 
   &::before {
