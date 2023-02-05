@@ -41,14 +41,16 @@ export const Form = styled.form`
   max-width: 38.6rem;
   padding: 3.2rem;
   border-radius: 1.6rem;
+  margin: 5rem;
   background-color: #ffffff;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  font-size: clamp(1.4rem, 1.2235rem + 0.4902vw, 1.6rem);
   animation: form 0.4s;
 
   header {
     h1 {
       margin-bottom: 0.8rem;
-      font-size: 3.2rem;
+      font-size: clamp(2.4rem, 1.6941rem + 1.9608vw, 3.2rem);
       font-weight: 700;
     }
     p {
@@ -64,7 +66,7 @@ export const Form = styled.form`
     font-weight: 500;
     color: #f5487f;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &.termos {
       text-decoration: underline;
@@ -86,5 +88,9 @@ export const Form = styled.form`
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 2.8rem 2.4rem;
   }
 `;

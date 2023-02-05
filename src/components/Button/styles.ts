@@ -19,4 +19,9 @@ export const Button = styled.button`
       background-color: #8f3b76;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 2.4rem;
+
+  }
 `;

@@ -5,5 +5,6 @@ export const Main = styled.main`
     place-items: center;
     max-width: 144rem;
     margin: 0 auto;
+    padding: 0 5%;
     min-height: 100vh;
 `
