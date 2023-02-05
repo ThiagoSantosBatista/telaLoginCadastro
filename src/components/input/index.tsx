@@ -14,7 +14,7 @@ const Input = ({ id, label, type, termos }: InputProps) => {
       return (
         <S.CheckboxWrapper>
           <S.InputCheckbox id={id} type={type} required />
-          <S.LabelCheckbox htmlFor={id}>{label}{termos === true ? <span className="medium termos">Termos e Condições de Uso.</span> : null}</S.LabelCheckbox>
+          <S.LabelCheckbox htmlFor={id}>{label}{termos && <a href="#home" className="medium termos">Termos e Condições de Uso.</a>}</S.LabelCheckbox>
         </S.CheckboxWrapper>
       );
     }

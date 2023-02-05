@@ -12,4 +12,11 @@ export const Button = styled.button`
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #8f3b76;
+    }
+  }
 `;

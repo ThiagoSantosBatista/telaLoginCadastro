@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import Input from "../Input";
+import { Form } from "../../styles/GlobalStyle";
 import * as S from "./styles";
 
 interface CadastroProps {
@@ -9,7 +10,7 @@ interface CadastroProps {
 
 const Cadastro = ({ toggleRegister }: CadastroProps) => {
   return (
-    <S.Form>
+    <Form>
       <header>
         <h1>Crie sua conta</h1>
         <p>Seja bem vindo! Insira seus dados.</p>
@@ -29,12 +30,16 @@ const Cadastro = ({ toggleRegister }: CadastroProps) => {
       <footer>
         <p>
           Já possui conta?{" "}
-          <span className="medium" onClick={() => toggleRegister(false)}>
+          <a
+            href="#home"
+            className="medium"
+            onClick={() => toggleRegister(false)}
+          >
             Fazer login.
-          </span>
+          </a>
         </p>
       </footer>
-    </S.Form>
+    </Form>
   );
 };
 

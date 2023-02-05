@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import Input from "../Input";
+import { Form } from "../../styles/GlobalStyle";
 import * as S from "./styles";
 
 interface LoginProps {
@@ -9,7 +10,7 @@ interface LoginProps {
 
 const Login = ({ toggleRegister }: LoginProps) => {
   return (
-    <S.Form>
+    <Form>
       <header>
         <h1>Login</h1>
         <p>Bem vindo de volta! Insira seus dados.</p>
@@ -24,12 +25,16 @@ const Login = ({ toggleRegister }: LoginProps) => {
       <footer>
         <p>
           Não tem uma conta?{" "}
-          <span className="medium" onClick={() => toggleRegister(true)}>
+          <a
+            href="#home"
+            className="medium"
+            onClick={() => toggleRegister(true)}
+          >
             Registre-se.
-          </span>
+          </a>
         </p>
       </footer>
-    </S.Form>
+    </Form>
   );
 };
 
