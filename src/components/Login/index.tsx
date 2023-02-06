@@ -10,7 +10,7 @@ interface LoginProps {
 
 const Login = ({ toggleRegister }: LoginProps) => {
   return (
-    <Form>
+    <Form action="" onSubmit={(e) => e.preventDefault()}>
       <header>
         <h1>Login</h1>
         <p>Bem vindo de volta! Insira seus dados.</p>
@@ -18,7 +18,7 @@ const Login = ({ toggleRegister }: LoginProps) => {
       <Input id="email" label="Email" type="email" />
       <Input id="senha" label="Senha" type="password" />
       <S.ForgotPasswordBox>
-        <Input id="checkbox" label="Lembrar de mim" type="checkbox" />
+        <Input id="lembrarSenha" label="Lembrar de mim" type="checkbox" />
         <a href="#home">Esqueceu sua senha?</a>
       </S.ForgotPasswordBox>
       <Button text="Entrar" />

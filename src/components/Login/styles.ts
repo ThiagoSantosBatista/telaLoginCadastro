@@ -12,11 +12,11 @@ export const ForgotPasswordBox = styled.div`
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 420px){
+  @media screen and (max-width: 400px) {
     align-items: flex-start;
     flex-direction: column;
 
-    a{
+    a {
       order: -1;
     }
   }

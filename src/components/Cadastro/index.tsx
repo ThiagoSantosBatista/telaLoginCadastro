@@ -10,17 +10,17 @@ interface CadastroProps {
 
 const Cadastro = ({ toggleRegister }: CadastroProps) => {
   return (
-    <Form>
+    <Form action="" onSubmit={(e) => e.preventDefault()}>
       <header>
         <h1>Crie sua conta</h1>
         <p>Seja bem vindo! Insira seus dados.</p>
       </header>
-      <Input id="nome" label="Nome" type="text" />
-      <Input id="email" label="Email" type="email" />
-      <Input id="senha" label="Senha" type="password" />
+      <Input id="nomeCadastro" label="Nome" type="text" />
+      <Input id="emailCadastro" label="Email" type="email" />
+      <Input id="senhaCadastro" label="Senha" type="password" />
       <S.TermosBox>
         <Input
-          id="checkbox"
+          id="termos"
           label="Concordo com os "
           type="checkbox"
           termos={true}

@@ -24,6 +24,10 @@ export const Input = styled.input`
     border-color: #f5487f;
     outline-color: #f5487f;
   }
+
+  &.password {
+    padding-right: 4rem;
+  }
 `;
 
 export const CheckboxWrapper = styled.div`
@@ -58,5 +62,17 @@ export const InputCheckbox = styled.input`
   }
   &:checked::before {
     opacity: 1;
+  }
+`;
+
+export const PasswordBox = styled.div`
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 `;
