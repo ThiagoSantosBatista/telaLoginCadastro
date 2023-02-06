@@ -8,7 +8,7 @@ export const Button = styled.button`
   border-radius: 0.4rem;
   color: #ffffff;
   background-color: #f5487f;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.25);
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -22,6 +22,5 @@ export const Button = styled.button`
 
   @media screen and (max-width: 400px) {
     margin-bottom: 2.4rem;
-
   }
 `;

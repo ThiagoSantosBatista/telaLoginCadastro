@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Background from "../assets/background.svg";
+import BackgroundMaior from "../assets/backgroundMaior.svg";
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before{
@@ -32,6 +33,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: inherit;
     text-decoration: none;
   }
+
+  @media screen and (min-height: 1000px) {
+    body{
+      background-image: url(${BackgroundMaior});
+      background-position: bottom;
+    }
+  } 
 `;
 
 export default GlobalStyle;

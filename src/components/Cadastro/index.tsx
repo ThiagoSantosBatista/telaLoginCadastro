@@ -31,7 +31,7 @@ const Cadastro = ({ toggleRegister }: CadastroProps) => {
         <p>
           Já possui conta?{" "}
           <a
-            href="#home"
+            href="#login"
             className="medium"
             onClick={() => toggleRegister(false)}
           >

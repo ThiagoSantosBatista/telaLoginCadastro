@@ -26,7 +26,7 @@ const Login = ({ toggleRegister }: LoginProps) => {
         <p>
           Não tem uma conta?{" "}
           <a
-            href="#home"
+            href="#cadastro"
             className="medium"
             onClick={() => toggleRegister(true)}
           >
